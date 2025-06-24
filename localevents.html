@@ -1,0 +1,168 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Community Events</title>
+    <link rel="stylesheet" href="localevents.css">
+    <link rel="icon" type="image/x-icon" href="Logo maker project (3).ico">
+</head>
+<body>
+    <!-- Navbar -->
+    <div class="navbar">
+        <div class="logo-commune">
+            <img src="Logo maker project (3).png" alt="Logo" class="logo">
+            <span class="commune"><a href="landing.html">COMMUNE</a></span>
+        </div>
+        <a href="landing.html">Home</a>
+        <a href="news.html">News</a>
+        <a href="localevents.html">Events</a>
+        <a href="directory.html">Directory</a>
+        <a href="resources.html">Resources</a>
+        <a href="contact.html">Contact</a>
+        <button id="darkModeButton" class="dark-mode-btn">Dark Mode</button>
+    <script>
+      const darkModeButton = document.getElementById("darkModeButton");
+
+      darkModeButton.addEventListener("click", function() {
+        document.body.classList.toggle("dark-mode");
+        });</script>
+    </div>
+
+    <!-- Hero Section -->
+    <div class="hero">
+        <div class="text">
+            <p>Discover exciting events happening in our community! </p>
+            <button>Find out!</button>
+        </div>
+        <div class="heropic">
+            <img src="heroevents.jpg" alt="Hero Image">
+        </div>
+    </div>
+
+    <!-- Event Cards Grid -->
+    <div class="grid">
+        <!-- Event Cards (using all provided cards) -->
+        <div class="card card1 sports">
+            <img src="cleanup.jpg" alt="Cleanup Drive">
+            <h3>Community Cleanup Drive</h3>
+            <p>Join us this Saturday to clean up our neighborhood parks and streets. Meet at 9:00 AM at Central Park's main entrance. Let’s keep our community clean and green!</p>
+            <div class="details">
+                <p>Location: Central Park</p>
+                <p>Date: November 30th</p>
+                <p>Time: 9:00 AM</p>
+            </div>
+            <button>Sign Up</button>
+        </div>
+
+        <div class="card card2 market">
+            <img src="farmers.jpg" alt="Farmers Market">
+            <h3>Farmers' Market</h3>
+            <p>Support local farmers and artisans at the weekly Farmers' Market this Sunday from 8:00 AM to 2:00 PM at Maple Street Square. Enjoy fresh produce and handmade goods!</p>
+            <div class="details">
+                <p>Location: Maple Street Square</p>
+                <p>Date: December 1st</p>
+                <p>Time: 8:00 AM - 2:00 PM</p>
+            </div>
+            <button>Visit Us</button>
+        </div>
+
+        <div class="card card3 workshop">
+            <img src="kidcod.jpg" alt="Tech Workshop">
+            <h3>Kids' Coding Workshop</h3>
+            <p>Introduce your child to the world of coding! A free workshop will be held on November 30th for kids and teens. Limited spots available—register now!</p>
+            <div class="details">
+                <p>Location: Community Center</p>
+                <p>Date: November 30th</p>
+                <p>Time: 10:00 AM</p>
+            </div>
+            <button>Register</button>
+        </div>
+
+        <div class="card card4 charity">
+            <img src="charity.jpg" alt="Charity Run">
+            <h3>5K Charity Run</h3>
+            <p>Run for a cause! Participate in our 5K Charity Run on December 10th to support underprivileged students. The run starts at 7:00 AM at Riverside Boulevard.</p>
+            <div class="details">
+                <p>Location: Riverside Boulevard</p>
+                <p>Date: December 10th</p>
+                <p>Time: 7:00 AM</p>
+            </div>
+            <button>Join the Run</button>
+        </div>
+
+        <div class="card card5 concert">
+            <img src="concert.jpg" alt="Music Concert">
+            <h3>Winter Music Concert</h3>
+            <p>Experience the magic of live music at our Winter Music Concert on December 15th at the City Hall Auditorium. Tickets are now available online!</p>
+            <div class="details">
+                <p>Location: City Hall Auditorium</p>
+                <p>Date: December 15th</p>
+                <p>Time: 7:00 PM</p>
+            </div>
+            <button>Buy Tickets</button>
+        </div>
+
+        <div class="card card6 bookclub">
+            <img src="bookclub.jpg" alt="Book Club">
+            <h3>Monthly Book Club</h3>
+            <p>Love reading? Join our book club’s monthly discussion on December 5th at the Downtown Library. This month’s book: *The Midnight Library* by Matt Haig.</p>
+            <div class="details">
+                <p>Location: Downtown Library</p>
+                <p>Date: December 5th</p>
+                <p>Time: 7:00 PM</p>
+            </div>
+            <button>Join Us</button>
+        </div>
+
+        <div class="card card7 art">
+            <img src="art.jpg" alt="Art Exhibition">
+            <h3>Art Exhibition</h3>
+            <p>Discover stunning works by local artists at the Annual Art Exhibition from December 1st to December 10th at the Arts Center. Admission is free!</p>
+            <div class="details">
+                <p>Location: Arts Center</p>
+                <p>Date: December 1st - December 10th</p>
+                <p>Time: 10:00 AM - 6:00 PM</p>
+            </div>
+            <button>Learn More</button>
+        </div>
+
+        <div class="card card8 holiday">
+            <img src="holiday.jpg" alt="Holiday Market">
+            <h3>Holiday Market</h3>
+            <p>Get in the holiday spirit at our Holiday Market on December 20th. Shop unique gifts, enjoy festive treats, and meet Santa Claus!</p>
+            <div class="details">
+                <p>Location: Downtown Square</p>
+                <p>Date: December 20th</p>
+                <p>Time: 9:00 AM - 5:00 PM</p>
+            </div>
+            <button>Explore</button>
+        </div>
+
+        <div class="card card9 volunteer">
+            <img src="volunteer.jpg" alt="Volunteer Opportunity">
+            <h3>Volunteer Opportunity</h3>
+            <p>Make a difference! We’re looking for volunteers to help with our community outreach programs. Flexible schedules and training provided.</p>
+            <div class="details">
+                <p>Location: Various Locations</p>
+                <p>Date: Ongoing</p>
+                <p>Time: Flexible</p>
+            </div>
+            <button>Sign Up</button>
+        </div>
+    </div>
+
+    <!-- Footer -->
+    <footer>
+        <div class="footer-left">
+            <p>&copy; 2024 Commune</p>
+        </div>
+        <div class="footer-right">
+            <a href="#">Privacy Policy</a>
+            <a href="#">Terms</a>
+        </div>
+    </footer>
+
+    
+</body>
+</html>

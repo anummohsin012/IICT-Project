@@ -1,0 +1,274 @@
+/* General styling */
+body {
+    font-family: 'Poppins', sans-serif;
+    margin: 0;
+    padding: 0;
+    background-image: url(amsterdam.jfif.jpg);
+    background-size: cover;
+    background-attachment: fixed;
+}
+
+.navbar {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 10px 15px;
+    gap: 0.5%;
+    background-color: hsla(0, 0%, 100%, 0.5); 
+}
+
+.logo-commune {
+    display:flex;
+    margin-left: 0px;
+    align-items: center;
+    gap: 0px;
+}
+
+.logo {
+    width: 70px; /* Fixed width for consistency */
+    height: auto;
+   
+}
+
+.commune {
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+.commune a {
+    text-decoration: none;
+    color: #25144D;
+}
+
+
+.nav-links {
+    display: flex;
+    gap: 20px;
+}
+
+.nav-links a {
+    text-decoration: none;
+    color: rgb(66, 57, 57);
+    padding: 5px 10px;
+    border-radius: 5px;
+    transition: background-color 0.3s ease, color 0.3s ease;
+}
+
+.nav-links a:hover {
+    background-color: beige;
+    color: black;
+}
+
+/* Tab container */
+.tabs {
+    width: 60%;
+    margin: 5% auto 10%;
+    border: 1px solid #ccc;
+    border-radius: 8px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    overflow: hidden;
+}
+
+/* Hide radio buttons */
+input[type="radio"] {
+    display: none;
+}
+
+/* Tab labels (navigation) */
+.tab-label {
+    display: inline-block;
+    width: 32.5%;
+    text-align: center;
+    padding: 15px 0;
+    background-color: #f9f9f9;
+    cursor: pointer;
+}
+
+.tab-label:hover {
+    background-color: #e0e0e0;
+}
+
+input[type="radio"]:checked + .tab-label {
+    background-color: #7a8fa4;
+    color: white;
+}
+
+.tab-content {
+    display: none;
+    padding: 20px;
+    background-color: #fff;
+    animation: fadeIn 0.3s ease;
+}
+.link {
+    text-decoration: none;
+    color: #6f39ef;
+}
+
+.img1 {
+    width: 30%;
+    height: auto;
+    border-radius: 8px;
+    overflow: hidden;
+}
+
+/* Show content for the active tab */
+#tab1:checked ~ #content1,
+#tab2:checked ~ #content2,
+#tab3:checked ~ #content3 {
+    display: block;
+}
+
+/* Footer */
+footer {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #333;
+    color: white;
+    padding: 10px 20px;
+    flex-wrap: wrap; /* Wrap items for smaller screens */
+}
+
+.footer-left,
+.footer-right {
+    flex: 1;
+    text-align: center;
+}
+
+.footer-right a {
+    color: white;
+    text-decoration: none;
+    margin: 0 5px;
+}
+
+.footer-right a:hover {
+    text-decoration: underline;
+}
+
+/* Responsive Adjustments */
+@media (max-width: 768px) {
+    .navbar {
+        padding: 8px 10px;
+        gap: 5%;
+    }
+
+    .logo {
+        width: 15%; /* Adjust logo size */
+    }
+
+    .commune {
+        font-size: 1.6rem; /* Reduce font size for smaller screens */
+    }
+
+    .nav-links {
+        gap: 15px;
+    }
+
+    .nav-links a {
+        font-size: 1rem; /* Adjust font size for nav links */
+    }
+
+    .tabs {
+        width: 80%; /* Make tabs container slightly wider */
+    }
+
+    .tab-label {
+        width: 32%; /* Adjust tab label width */
+        padding: 12px 0;
+    }
+
+    .img1 {
+        width: 100%; /* Ensure images are responsive */
+    }
+
+    .footer {
+        padding: 10px 15px;
+    }
+
+    .footer-left,
+    .footer-right {
+        font-size: 0.9rem; /* Smaller font size in footer */
+    }
+}
+
+@media (max-width: 480px) {
+    .navbar {
+        padding: 5px 8px;
+    }
+
+    .logo {
+        width: 20%; /* Further reduce logo size */
+    }
+
+    .commune {
+        font-size: 1.4rem; /* Further reduce font size for very small screens */
+    }
+
+    .nav-links {
+        gap: 10px;
+        justify-content: center; /* Center nav links for small screens */
+    }
+
+    .nav-links a {
+        font-size: 0.9rem; /* Reduce font size of nav links */
+        padding: 6px 10px;
+    }
+
+    .tabs {
+        width: 90%; /* Make tabs container wider */
+    }
+
+    .tab-label {
+        width: 32%;
+        padding: 10px 0;
+    }
+
+    .img1 {
+        width: 100%; /* Make images responsive */
+    }
+
+    .footer {
+        padding: 10px 15px;
+        flex-direction: column; /* Stack footer items */
+        text-align: center;
+    }
+
+    .footer-left,
+    .footer-right {
+        font-size: 0.8rem; /* Smaller text in footer */
+    }
+
+    .footer-right a {
+        font-size: 0.9rem; /* Smaller footer link text */
+    }
+}
+
+.dark-mode-btn {
+    padding: 12px 25px;
+    font-size: 0.8rem;
+    background-color: #555;
+    color: white;
+    border: none;
+    border-radius: 30px;
+    cursor: pointer;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    transition: all 0.3s ease;
+    text-transform: uppercase;
+    font-weight: bold;
+    margin-top: 10px;
+}
+
+/* Dark Mode Button Hover Effect */
+.dark-mode-btn:hover {
+    background-color: #333;
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.3);
+    transform: translateY(-5px); /* Slight hover lift */
+    color: #f1f1f1;
+}
+
+.dark-mode-btn:active {
+    transform: translateY(0);
+    box-shadow: 0 2px 6px rgba(0, 0, 0, 0.2);
+}
+.dark-mode {
+    background-color: black;
+    color: rgb(90, 83, 83);
+}
